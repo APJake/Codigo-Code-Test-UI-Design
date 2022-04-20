@@ -35,4 +35,9 @@
     <style name= "EncodeSansButtonStyle" parent= "android:Widget.Button" >
         <item name= "android:fontFamily">@font/encode_sans</item>
     </style>
+    <style name= "CustomTabBarTextStyle" >
+        <item name= "android:fontFamily">@font/encode_sans</item>
+        <item name="android:textSize">@dimen/text_regular_2x</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
 </resources>

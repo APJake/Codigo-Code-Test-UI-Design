@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dotted_border"
+    android:padding="1dp"
+    android:layout_marginBottom="@dimen/large_margin"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        >
+
+        <TextView
+            android:id="@+id/tv_e_voucher_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_e_voucher_rate"
+            android:textSize="@dimen/text_regular"
+            android:textFontWeight="700"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mobile_app_special_voucher"
+            android:textSize="@dimen/text_regular_3x"
+            android:textFontWeight="700"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tv_e_voucher_rate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon_check"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@drawable/nextred"
+            android:backgroundTint="@color/secondary"
+            android:layout_marginEnd="@dimen/min_margin"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/min_margin"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/fnb"
+                    />
+                <TextView
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/inclusive_of_breakfast"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/text_small"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:src="@drawable/discount"
+                    />
+                <TextView
+                    android:textFontWeight="500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/_20_off_in_room_service"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/text_small"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/view_rates"
+                    android:textColor="@color/secondary"
+                    android:textSize="@dimen/text_regular"
+                    android:textStyle="bold"
+                    app:backgroundTint="@android:color/transparent"
+                    app:rippleColor="#33AAAAAA"
+                    app:cornerRadius="0dp"
+                    android:textAllCaps="false"
+                    app:strokeColor="@color/secondary"
+                    app:strokeWidth="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/text_hint"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@id/ll_middle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/tiny_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            app:layout_constraintTop_toBottomOf="@id/view_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_regular"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:text="@string/avg_nightly_room_from"/>
+
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/text_small"
+                    android:maxLines="1"
+                    android:textFontWeight="600"
+                    android:text="@string/subject_to_gst_service_charge"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="@string/sgd"/>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_heading_1x"
+                android:maxLines="1"
+                android:textFontWeight="700"
+                android:text="@string/_161_42"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="@dimen/min_margin"
+        android:background="@color/tertiary"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_tiny"
+            android:layout_height="@dimen/icon_size_tiny"
+            android:background="@drawable/ic_flash_on"
+            android:backgroundTint="@color/on_tertiary"
+            android:layout_marginEnd="@dimen/min_margin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/members_deals"
+            android:textSize="@dimen/text_regular"
+            android:textFontWeight="700"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -21,7 +21,7 @@
             android:textColor="@color/black"
             android:maxLines="2"
             android:textSize="@dimen/text_heading_1x"
-            android:textStyle="bold"
+            android:textFontWeight="900"
             tools:text="Furama Riverfront,\nSingapore"
             />
 
@@ -45,9 +45,10 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/text_hint"
             android:maxLines="1"
             android:textSize="@dimen/text_regular"
+            android:textFontWeight="600"
             tools:text="This is my address"
             />
 

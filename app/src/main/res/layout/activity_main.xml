@@ -112,7 +112,6 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:onClick="test"
                     android:gravity="center"
                     >
                     <ImageView
@@ -121,6 +120,7 @@
                         android:src="@drawable/theme"
                         />
                     <TextView
+                        android:textFontWeight="500"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/amenities"
@@ -141,6 +141,7 @@
                         android:src="@drawable/workout"
                         />
                     <TextView
+                        android:textFontWeight="500"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/facilities"
@@ -161,6 +162,7 @@
                         android:src="@drawable/fnb"
                         android:contentDescription="@string/icon" />
                     <TextView
+                        android:textFontWeight="500"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/f_b"
@@ -181,6 +183,7 @@
                         android:src="@drawable/kidsfamily"
                         />
                     <TextView
+                        android:textFontWeight="500"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/kids_family"
@@ -201,6 +204,7 @@
                         android:src="@drawable/wellness"
                         />
                     <TextView
+                        android:textFontWeight="500"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/wellness"
@@ -211,15 +215,33 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/large_margin"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabIndicatorGravity="stretch"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabSelectedTextColor="@color/on_primary"
+                app:tabTextColor="@color/on_primary"
+                app:tabIndicatorColor="@color/primary"
+                app:tabIndicator="@drawable/bg_by_rates"
+                android:background="@drawable/bg_tab"
+                app:tabTextAppearance="@style/CustomTabBarTextStyle"
+                />
 
-
-
-            </LinearLayout>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpTabBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:foregroundGravity="center"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginHorizontal="@dimen/large_margin"
+                android:overScrollMode="never"
+                />
 
         </LinearLayout>
 

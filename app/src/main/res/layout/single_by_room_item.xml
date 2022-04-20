@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/default_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/by_room_item_image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bagan"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/min_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_3x"
+                android:layout_marginTop="@dimen/min_margin"
+                android:textFontWeight="700"
+                android:maxLines="1"
+                android:text="@string/item_title"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular"
+                android:maxLines="1"
+                android:textFontWeight="600"
+                android:text="@string/item_description"
+                android:layout_marginBottom="@dimen/tiny_margin"
+                />
+
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/view_rates"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/text_regular"
+            android:textStyle="bold"
+            app:backgroundTint="@android:color/transparent"
+            app:rippleColor="#33AAAAAA"
+            app:cornerRadius="0dp"
+            android:textAllCaps="false"
+            app:strokeColor="@color/secondary"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/default_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:text="@string/avg_nightly_room_from"/>
+
+        <TextView
+            android:id="@+id/tvCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:text="@string/sgd"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_heading_1x"
+            android:maxLines="1"
+            android:textFontWeight="700"
+            android:text="@string/_161_42"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/text_hint"
+        />
+
+</LinearLayout>

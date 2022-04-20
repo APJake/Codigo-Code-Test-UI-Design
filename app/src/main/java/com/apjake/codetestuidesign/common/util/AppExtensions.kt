@@ -11,7 +11,7 @@ fun ImageView.show(imageUrl: String) {
         .load(imageUrl)
         .apply(
             RequestOptions.fitCenterTransform()
-                .error(R.drawable.ic_error)
+                .error(R.drawable.bagan)
         )
         .into(this)
 }

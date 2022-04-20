@@ -7,4 +7,20 @@
     <string name="f_b"><![CDATA[F&B]]></string>
     <string name="kids_family">Kids/family</string>
     <string name="wellness">Wellness</string>
+    <string name="by_room">By Room</string>
+    <string name="by_rates">By Rates</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_rates">View Rates</string>
+    <string name="avg_nightly_room_from">Avg. Nightly / Room From</string>
+    <string name="sgd">SGD</string>
+    <string name="_161_42">161.42</string>
+    <string name="item_description">Item description</string>
+    <string name="item_title">Item Title</string>
+    <string name="members_deals">MEMBERS DEALS</string>
+    <string name="your_e_voucher_rate">YOUR E-VOUCHER RATE</string>
+    <string name="mobile_app_special_voucher">Mobile App Special Voucher</string>
+    <string name="inclusive_of_breakfast">Inclusive of Breakfast</string>
+    <string name="_20_off_in_room_service">20% off\nIn-Room service</string>
+    <string name="subject_to_gst_service_charge"><![CDATA[Subject to GST & Service charge]]></string>
 </resources>
