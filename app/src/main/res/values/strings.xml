@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Code Test UI Design</string>
+    <string name="go_back">Go Back</string>
+    <string name="facilities">Facilities</string>
+    <string name="amenities">Amenities</string>
+    <string name="icon">icon</string>
+    <string name="f_b"><![CDATA[F&B]]></string>
+    <string name="kids_family">Kids/family</string>
+    <string name="wellness">Wellness</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/banner_width"
+    android:layout_height="@dimen/banner_height"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingHorizontal="@dimen/tiny_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:textSize="@dimen/text_heading_1x"
+            android:textStyle="bold"
+            tools:text="Furama Riverfront,\nSingapore"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@drawable/nextred"
+            android:contentDescription="@string/go_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:textSize="@dimen/text_regular"
+            tools:text="This is my address"
+            />
+
+        <ImageButton
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@drawable/currentlocation"
+            android:contentDescription="@string/go_back" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPoster"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_image_height"
+        android:layout_marginBottom="12dp"
+        tools:src="@tools:sample/avatars" />
+
+</LinearLayout>
