@@ -6,8 +6,4 @@ import com.apjake.codetestuidesign.helper.TravelListGenerator
 import com.apjake.codetestuidesign.model.Travel
 
 class MainViewModel: ViewModel() {
-    val travelList= MutableLiveData<List<Travel>>()
-    init {
-        travelList.postValue(TravelListGenerator.generate())
-    }
 }

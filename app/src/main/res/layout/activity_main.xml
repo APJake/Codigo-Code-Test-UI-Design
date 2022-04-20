@@ -61,18 +61,19 @@
                 android:layout_marginTop="@dimen/min_margin"
                 >
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rcyBanner"
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vpBanner"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/banner_height"
                     android:clipToPadding="false"
-                    android:orientation="horizontal"
+                    android:foregroundGravity="center"
+                    android:overScrollMode="never"
                     android:paddingHorizontal="20dp"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:listitem="@layout/single_banner_item" />
+                    />
 
                 <LinearLayout
                     android:layout_width="140dp"
@@ -111,6 +112,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:onClick="test"
                     android:gravity="center"
                     >
                     <ImageView
