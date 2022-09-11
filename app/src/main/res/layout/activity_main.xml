@@ -239,7 +239,6 @@
                 android:clipToPadding="false"
                 android:foregroundGravity="center"
                 android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginHorizontal="@dimen/large_margin"
                 android:overScrollMode="never"
                 />
 

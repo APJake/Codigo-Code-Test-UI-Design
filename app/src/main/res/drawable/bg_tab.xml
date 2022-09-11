@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item>
-        <bitmap android:src="@drawable/trape_outline"
+        <bitmap
+            android:src="@drawable/trape_outline"
             android:tint="@color/primary"/>
-
     </item>
 </selector>
